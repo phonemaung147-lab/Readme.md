@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>フオンミンマウン - ポートフォリオ</title>
+    <style>
+        /* 全体のスタイル調整 */
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+            border-bottom: 5px solid #3498db;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+        header p {
+            margin: 10px 0 0 0;
+            font-size: 1.1rem;
+            opacity: 0.8;
+        }
+        section {
+            background: #fff;
+            margin: 30px 0;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: #2c3e50;
+            border-left: 5px solid #3498db;
+            padding-left: 10px;
+            margin-top: 0;
+        }
+        /* リストのスタイル */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+        ul li::before {
+            content: "■";
+            position: absolute;
+            left: 0;
+            color: #3498db;
+        }
+        /* 制作物内のテーブル（表形式）スタイル */
+        .project-card {
+            background: #f1f5f9;
+            padding: 20px;
+            border-radius: 6px;
+            margin-top: 15px;
+        }
+        .project-title {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .project-desc {
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            background-color: #fff;
+        }
+        th, td {
+            border: 1px solid #cbd5e1;
+            padding: 10px;
+            text-align: left;
+            font-size: 0.9rem;
+        }
+        th {
+            background-color: #e2e8f0;
+            color: #1e293b;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            color: #777;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>フオンミンマウン</h1>
+            <p>エンジニア ポートフォリオ</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>自己紹介</h2>
+            <p>ITと日本語のスキルを活かし、丁寧で確実なシステム開発を目指すエンジニアです。現在はWeb制作の基礎となるHTMLやCSSの学習に取り組み、見やすく分かりやすいコードを書くことを意識しています。</p>
+        </section>
+
+        <section id="skills">
+            <h2>保有スキル・資格</h2>
+            <ul>
+                <li><strong>日本語能力試験N2</strong>（ビジネスや日常生活における深いコミュニケーションが可能）</li>
+                <li><strong>MOS Excel 365 一般レベル</strong>（データ集計や表計算の基礎・実務スキル）</li>
+                <li><strong>基本情報技術者試験</strong>（ITの基礎知識、論理的思考力、アルゴリズムの理解）</li>
+            </ul>
+        </section>
+
+        <section id="works">
+            <h2>制作物</h2>
+            <div class="project-card">
+                <div class="project-title">HTMLによるスキル一覧表ページ</div>
+                <div class="project-desc">
+                    <strong>使用技術:</strong> HTML5 / CSS3<br>
+                    <strong>概要:</strong> 自分が保有しているスキルや資格を、Webブラウザ上で綺麗に整理して表示するための表（テーブル）を作成しました。各スキルの詳細や強みを一目で確認できるようにデザインしています。
+                </div>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>スキル・資格名</th>
+                            <th>レベル・区分</th>
+                            <th>アピールポイント</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>日本語能力試験（JLPT）</strong></td>
+                            <td>N2</td>
+                            <td>業務上の指示を正確に理解し、円滑なコミュニケーションが取れます。</td>
+                        </tr>
+                        <tr>
+                            <td><strong>MOS Excel 365</strong></td>
+                            <td>一般レベル</td>
+                            <td>データの整理・集計、グラフ作成など、実務に必要な書類作成が可能です。</td>
+                        </tr>
+                        <tr>
+                            <td><strong>基本情報技術者試験（FE）</strong></td>
+                            <td>国家資格</td>
+                            <td>プログラミングの論理、ネットワークやセキュリティの基礎知識を有しています。</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 フオンミンマウン. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
